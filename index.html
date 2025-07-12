@@ -131,37 +131,40 @@
       background: var(--primary);
       color: var(--white);
     }
-
     /* Mobile Navigation */
-   .mobile-menu-btn {
-  display: none;
-  background: var(--primary);
-  color: var(--white);
-  border: none;
-  width: 40px;
-  height: 40px;
-  border-radius: 6px;
-  font-size: 1.2rem;
-  cursor: pointer;
-  transition: var(--transition);
-  align-items: center;
-  justify-content: center;
-}
+    .mobile-menu-btn {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      color: var(--primary);
+      cursor: pointer;
+    }
 
-.mobile-menu-btn:hover {
-  background: var(--primary-dark);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(29, 191, 115, 0.3);
-}
-    <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
-  <i class="fas fa-bars"></i>
-</button>
+    .mobile-nav {
+      position: fixed;
+      top: 70px;
+      left: 0;
+      width: 100%;
+      background: var(--white);
+      box-shadow: var(--shadow);
+      padding: 20px;
+      display: none;
+      flex-direction: column;
+      gap: 15px;
+      z-index: 999;
+    }
 
-  @media (max-width: 768px) {
-  .mobile-menu-btn {
-    display: flex;
-  }
-}
+    .mobile-nav.active {
+      display: flex;
+    }
+
+    .mobile-nav button {
+      width: 100%;
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #eee;
+    }
     
     /* Sections */
     .section {
