@@ -1008,30 +1008,14 @@
   </nav>
   
   <!-- Mobile Navigation -->
-  <div class="mobile-nav" id="mobileNav">
-<!-- Navigation -->
-<nav>
-  <a href="#" class="nav-logo">AI Content Humanizer</a>
-  
-  <div class="nav-links">
-    <button onclick="showSection('hero')">Home</button>
-    <button onclick="showSection('profile')">Profile</button>
-    <button onclick="showSection('gigs')">Services</button>
-    <button onclick="showSection('prices')">Pricing</button>
-    <button onclick="showSection('reviews')">Reviews</button>
-    <button onclick="showSection('blog')">Blog</button>
-    <button onclick="showSection('contact')">Contact</button>
-  </div>
-  
-  <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
-    <i class="fas fa-bars"></i>
-  </button>
-  
-  <div class="nav-cta">
-    <a href="https://www.fiverr.com/mramzan15" class="button" target="_blank">Order Now</a>
-    <a href="https://wa.link/uh2rj3" class="button button-outline" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-  </div>
-</nav>
+   <div class="mobile-nav" id="mobileNav">
+    <button onclick="showSection('hero'); toggleMobileMenu()">Home</button>
+    <button onclick="showSection('profile'); toggleMobileMenu()">Profile</button>
+    <button onclick="showSection('gigs'); toggleMobileMenu()">Services</button>
+    <button onclick="showSection('prices'); toggleMobileMenu()">Pricing</button>
+    <button onclick="showSection('reviews'); toggleMobileMenu()">Reviews</button>
+    <button onclick="showSection('blog'); toggleMobileMenu()">Blog</button>
+    <button onclick="showSection('contact'); toggleMobileMenu()">Contact</button>
   </div>
 
   <!-- Hero Section -->
