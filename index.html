@@ -11,6 +11,16 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.fiverr.com/mramzan15">
     <title>Siraj Ahmed | AI Content Humanizer & Professional Writer</title>
+<style>
+  section {
+    display: none;
+  }
+
+  section.active-section {
+    display: block;
+  }
+</style>
+
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -1207,7 +1217,8 @@
     </div>
     
     <!-- Hero Section -->
-    <section class="hero" id="home">
+<section class="hero active-section" id="home">
+    
         <div class="container hero-container animate__animated animate__fadeIn">
             <h1 class="hero-title">Transform <span>AI Content</span> into Natural Human Writing</h1>
             <p class="hero-subtitle">Professional AI content humanization services that make your ChatGPT, Gemini, or other AI-generated text sound 100% human-written and pass all detection tools.</p>
@@ -1443,7 +1454,7 @@
                     <img src="https://i.ibb.co/ZR7B7qwW/SEO-blog-post-article-writing-website-content-SEO-blog-post-article-writing-website-content-SEO-blog.jpg" alt="Humanize Essays/Articles" class="gig-image">
                     <div class="gig-content">
                         <h3 class="gig-title">Humanize Essays/Articles</h3>
-                        <p class="service-price">From $25</p>
+                        <p class="service-price">From $50</p>
                         <p>Convert AI essays into flawless, natural native English.</p>
                         <a href="https://www.fiverr.com/s/2K9LG1k" class="btn btn-primary" target="_blank" style="margin-top: 15px; display: inline-block;">Order Now</a>
                         
@@ -1917,5 +1928,33 @@
         });
     });
     </script>
+<!-- Existing chatbot toggle, scroll, or animation scripts -->
+<script>
+  // ... your existing JavaScript like toggleChatbot(), smooth scroll, etc.
+</script>
+
+<!-- ADD THIS SCRIPT JUST BEFORE </body> -->
+<script>
+  document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', function (e) {
+      const targetId = this.getAttribute('href');
+
+      if (targetId.length > 1 && document.querySelector(targetId)) {
+        e.preventDefault();
+
+        // Hide all sections
+        document.querySelectorAll('section').forEach(sec => sec.classList.remove('active-section'));
+
+        // Show only the clicked section
+        const targetSection = document.querySelector(targetId);
+        if (targetSection) {
+          targetSection.classList.add('active-section');
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+      }
+    });
+  });
+</script>
+
 </body>
 </html>
